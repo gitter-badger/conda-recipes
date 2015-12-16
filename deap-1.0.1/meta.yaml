@@ -1,0 +1,29 @@
+package:
+  name: deap
+  version: "1.0.1"
+
+source:
+  git_tag: 1.0.1
+  git_url: https://github.com/DEAP/deap
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+    - numpy
+
+test:
+  imports:
+    - numpy
+    - deap
+    - deap.benchmarks
+    - deap.tests
+    - deap.tools
+
+about:
+  home: https://www.github.com/deap
+  license: GNU Library or Lesser General Public License (LGPL)
+  summary: 'Distributed Evolutionary Algorithms in Python'
+
