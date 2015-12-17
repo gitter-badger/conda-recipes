@@ -1,0 +1,25 @@
+package:
+  name: cite2c
+  version: "1"
+
+source:
+  git_url: https://github.com/Ohjeah/cite2c
+
+requirements:
+  build:
+    - python
+    - ipython >=3.0.0
+    - notebook
+    - ipywidgets
+
+  run:
+    - python
+    - ipython >=3.0.0
+    - notebook
+    - ipywidgets
+
+test:
+  imports:
+
+
+
