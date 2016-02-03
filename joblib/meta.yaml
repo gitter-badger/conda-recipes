@@ -1,0 +1,42 @@
+package:
+  name: joblib
+  version: 0.9.0
+source:
+    git_url: https://github.com/joblib/joblib
+    git_tag: 0.9.0
+
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - nose
+    - joblib
+    - joblib.test
+
+  #commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  requires:
+    # Put any additional test requirements here.  For example
+    - nose
+
+about:
+  home: http://packages.python.org/joblib/
+  license: BSD License
+  summary: 'Lightweight pipelining: using Python functions as pipeline jobs.'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
