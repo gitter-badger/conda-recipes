@@ -1,10 +1,9 @@
 package:
-  name: sshtunnel
-  version: "0.0.8"
+  name: pybrain
+  version: "0.3.3"
 
 source:
-  git_url: https://github.com/pahaz/sshtunnel/
-  git_tag: v008
+  git_url: https://github.com/pybrain/pybrain
 #  patches:
    # List any patch files here
    # - fix.patch
@@ -29,11 +28,13 @@ requirements:
   build:
     - python
     - setuptools
-    - paramiko
+    - scipy
 
   run:
-    - paramiko
+    - python
+    - scipy
 
 test:
   imports:
-    - sshtunnel
+    - pybrain
+    - scipy
