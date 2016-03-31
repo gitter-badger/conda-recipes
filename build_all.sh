@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSIONS="27 33 34"
+VERSIONS="27 35"
 BUILDDIR=~/miniconda3/conda-bld
 
 function build {
